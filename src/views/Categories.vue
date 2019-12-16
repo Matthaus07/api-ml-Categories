@@ -1,21 +1,15 @@
-
 <template>
   <div>
     <h1>Categorias</h1>
     <h3>Selecione uma categoria</h3>
-    <ul>
-      <ListaCategorias v-for="categoria in categorias"
-       :key="categoria.id" 
-       :categoria="categoria"
-      >
-      </ListaCategorias>
-    </ul>
+    <v-container class="grey lighten-5">
+      <ListaCategorias v-for="categoria in categorias" :key="categoria.id" :categoria="categoria"></ListaCategorias>
+    </v-container>
   </div>
 </template>
 
 <script>
-import axios from "axios";
-import config from "../config/config";
+import config from "../services/CategoriesApi";
 import ListaCategorias from "../components/categories/ListaCategorias";
 export default {
   components: {
@@ -27,9 +21,10 @@ export default {
     };
   },
   created() {
-    axios.get(`${config.baseURL}`).then(response => {
+    config.getCategories("", response => {
+      console.log(response);
       this.categorias = response.data.categories;
     });
-  },
+  }
 };
 </script>

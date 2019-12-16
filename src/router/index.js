@@ -1,20 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
-import Categories from '../views/Categories'
+import Categorias from '../views/Categories'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home
   },
 
   {
-    path: "/categories",
-    name: 'categories',
-    component: Categories
+    path: "/categorias",
+    name: 'Categorias',
+    component: Categorias
   }
 ]
 
