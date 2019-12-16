@@ -2,7 +2,7 @@
 
 ## Objetivo desse programa
 
-#Markdown
+
 1 - Mostrar através de uma simples interface que conecta com a api do Mercado Livre
 e cheque informações a respeito das categorias, com seus produtos mais relevantes para 
 cada uma
@@ -11,7 +11,6 @@ cada uma
 
 ## Tecnologias utilizadas
 
-#Markdown
 - Vue.js
 - Axios
 - vue-router
