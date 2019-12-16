@@ -23,11 +23,9 @@ export default {
     TabelaCategorias
   },
 
-  data() {
-    return {
+  data:() => ({
       subcategoria: []
-    };
-  },
+  }),
   props: {
     categoria: {
       type: Object,

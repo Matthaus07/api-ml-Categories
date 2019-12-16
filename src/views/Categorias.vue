@@ -15,11 +15,9 @@ export default {
   components: {
     ListaCategorias
   },
-  data() {
-    return {
-      categorias: []
-    };
-  },
+  data: () => ({
+    categorias: [],
+  }),
   created() {
     config.getCategories("", response => {
       this.categorias = response.data.categories;
