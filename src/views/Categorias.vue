@@ -22,7 +22,6 @@ export default {
   },
   created() {
     config.getCategories("", response => {
-      console.log(response);
       this.categorias = response.data.categories;
     });
   }

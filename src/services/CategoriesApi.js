@@ -1,11 +1,14 @@
 import axios from "axios";
 
 export default {
-    getCategories: (url, resp) => {
-        const baseURL = 'https://api.mercadolibre.com'
-        axios.get(`${baseURL}/sites/MLB/${url}`).then((response) => {
-            resp(response);
-        })
-            .catch(error => { console.log(error) })
+    getCategories: async (url, resp) => {
+        try {
+            const baseURL = 'https://api.mercadolibre.com'
+            const res = await axios.get(`${baseURL}/sites/MLB/${url}`)
+            return resp(res)
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
 }

@@ -43,7 +43,6 @@ function produtos_categoria(categoria) {
   const limit = 10;
   const url = `search?category=${categoria}&limit=${limit}`;
   config.getCategories(url, response => {
-    console.log(response.data.results);
     this.subcategoria = response.data.results;
   });
 }
