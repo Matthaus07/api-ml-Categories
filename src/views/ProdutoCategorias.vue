@@ -3,7 +3,6 @@
     <v-container>
       <v-row>
         <v-col md="6" cols="12">
-          <v-form>
             <v-text-field
               v-model="produto"
               :rules="nameRules"
@@ -12,13 +11,11 @@
             required>
               <template v-slot:append required>
                 <v-icon
-                  type="submit"
                   @click.prevent.stop="dataProdutoRelevante()"
                   class="blue darken-2"
                 >fas fa-search</v-icon>
               </template>
             </v-text-field>
-          </v-form>
         </v-col>
         <v-col md="6" cols="12">
           <v-simple-table v-if="produtos.length">

@@ -1,15 +1,19 @@
 <template>
   <div>
     <v-col cols="12" md="12" offset-md="1">
+     
       <v-card class="mx-auto" max-width="250" outlined>
         <v-row>
+        
           <v-col cols="12" md="8">
             <div class="pa-2" tile>
               <button @click.prevent.stop="produtos_categoria(categoria.id)">{{categoria.name}}</button>
             </div>
           </v-col>
+       
         </v-row>
       </v-card>
+   
     </v-col>
     <TabelaCategorias :tabcategoria="subcategoria"></TabelaCategorias>
   </div>

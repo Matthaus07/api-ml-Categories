@@ -1,24 +1,37 @@
-# apimlvue
+# api-ml
 
-## Project setup
+## Objetivo desse programa
+
+#Markdown
+1 - Mostrar através de uma simples interface que conecta com a api do Mercado Livre
+e cheque informações a respeito das categorias, com seus produtos mais relevantes para 
+cada uma
+
+2 - Buscar através de uma palavra o produto que mais se encaixaria com a(s) categoria(s)
+
+## Tecnologias utilizadas
+
+#Markdown
+- Vue.js
+- Axios
+- vue-router
+- vuetify
+
+## Instalação das dependências (Passo 1)
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilar projeto localmente (Passo 2)
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Minificar para a produção
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
+### mais configurações
 See [Configuration Reference](https://cli.vuejs.org/config/).
