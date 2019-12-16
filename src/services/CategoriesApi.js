@@ -10,7 +10,7 @@ export default {
                 method: 'get',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*',
+                    'Accept':'application/json'
                 }
             }
             const res = await axios(options)
